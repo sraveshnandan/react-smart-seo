@@ -1,18 +1,53 @@
 {
-  "name": "pkg1",
-  "version": "1.0.0",
-  "description": "",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "name": "@nandansravesh/react-smart-seo",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "description": "Framework-agnostic SEO orchestration for React with automatic metadata, Open Graph, and structured data.",
+  "keywords": [
+    "react",
+    "seo",
+    "react-seo",
+    "metadata",
+    "open-graph",
+    "twitter-cards",
+    "json-ld",
+    "head",
+    "ssr"
+  ],
+  "author": "Sravesh Nandan",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sraveshnandan/react-smart-seo"
+  },
+  "homepage": "https://github.com/sraveshnandan/react-smart-seo",
+  "bugs": {
+    "url": "https://github.com/sraveshnandan/react-smart-seo/issues"
+  },
   "scripts": {
     "build": "tsup"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "type": "commonjs",
+  "peerDependencies": {
+    "react": ">=17"
+  },
   "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@types/react": "^19.2.7",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3"
   }
